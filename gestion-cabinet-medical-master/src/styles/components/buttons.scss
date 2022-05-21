@@ -1,0 +1,94 @@
+.button__1 {
+   padding: 0.7rem 1.8rem;
+   border-radius: 2.5rem;
+   background-color: var(--color-primary-1);
+   background-image: linear-gradient(to right bottom, #00000000, #0000000e);
+   color: white;
+
+   transition: all 0.3s;
+   &:hover {
+      opacity: 0.9;
+   }
+}
+
+.button__2 {
+   padding: 0.7rem 1.8rem;
+   border-radius: 2.5rem;
+   background-color: var(--color-secondary-1);
+   background-image: linear-gradient(to right bottom, #00000000, #0000000e);
+   color: white;
+
+   transition: all 0.3s;
+   &:hover {
+      opacity: 0.9;
+   }
+}
+
+.button__3 {
+   padding: 0.7rem 1.8rem;
+   border-radius: 2.5rem;
+   color: var(--color-primary-1);
+   background-color: var(--color-lightgray-4);
+
+   transition: all 0.3s;
+   &:hover {
+      background-color: var(--color-lightgray-3);
+   }
+}
+
+.pagination {
+   display: flex;
+   margin-top: 30px;
+   .active {
+      a {
+         background-color: var(--color-primary-1);
+         color: #fff;
+      }
+   }
+   li {
+      margin-right: 10px;
+      a {
+         padding: 5px 12px 6px 12px;
+         border: 1px solid var(--color-primary-1);
+         border-radius: 5px;
+         color: var(--color-primary-1);
+         &:hover {
+            background-color: var(--color-primary-1);
+            color: #fff;
+         }
+      }
+   }
+}
+
+.button__4 {
+   background-color: #fff;
+   border-radius: 24px;
+   border-style: none;
+   box-shadow: rgba(0, 0, 0, 0.1) 0 3px 5px -1px,
+      rgba(0, 0, 0, 0.1) 0 6px 10px 0, rgba(0, 0, 0, 0.08) 0 1px 18px 0;
+   box-sizing: border-box;
+   color: #3c4043;
+   font-size: 14px;
+   font-family: inherit;
+   letter-spacing: 0.25px;
+   line-height: normal;
+   padding: 11px 24px;
+   transition: all 280ms ease;
+   &:hover {
+      background: #f6f9fe;
+      color: #174ea6;
+   }
+
+   &:active {
+      box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+         rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+      outline: none;
+      transform: translateY(1px);
+      //border: 1px solid #4285f4;
+   }
+}
+.css-v52121 {
+   background: linear-gradient(to right, #5e84f5, var(--color-primary-1));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}

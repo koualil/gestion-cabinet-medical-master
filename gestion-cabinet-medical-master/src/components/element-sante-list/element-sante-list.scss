@@ -1,0 +1,29 @@
+.element__sante__card {
+   box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
+
+   border-radius: 5px;
+   .element__sante__title {
+      padding: 4px 12px;
+      background-color: var(--color-lightgray-4);
+   }
+   .element__sante_desc {
+      padding: 8px 12px;
+      position: relative;
+      cursor: pointer;
+      border-radius: 6px;
+
+      background: white;
+      transition: all 0.3s;
+
+      // &::before {
+      //    position: absolute;
+      //    content: "";
+      //    background-color: var(--color-primary-1);
+      //    height: 100%;
+      //    width: 3px;
+      //    left: 0;
+      //    top: 0;
+      // }
+   }
+}

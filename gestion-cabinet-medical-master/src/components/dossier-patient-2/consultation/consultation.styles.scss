@@ -1,0 +1,25 @@
+.medicament__list {
+   .medicament__title {
+      padding: 8px;
+      background-color: var(--color-lightgray-4);
+      font-size: 16px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+
+      cursor: pointer;
+      &:hover {
+         background-color: var(--color-lightgray-3);
+      }
+   }
+   .medicament__desc {
+      padding: 14px 8px;
+   }
+}
+
+details {
+   summary {
+      list-style: none;
+
+      border: 1px solid #eee;
+   }
+}

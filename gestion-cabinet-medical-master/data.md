@@ -1,0 +1,8 @@
+-  patients
+   -  antecedents
+-  medecins
+-  consultations
+   -  prescription
+   -  comptes rendu
+-  secretaire
+-  rendez vous

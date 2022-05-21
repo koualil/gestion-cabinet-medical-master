@@ -1,0 +1,13 @@
+.widthh{
+    width: 450px;
+    
+}
+.buttonDelete:hover{
+    outline: none;
+     
+    letter-spacing: 1px;
+    background-color: red;
+    color: white;
+    transition: all 0.3s linear ;
+}
+ 

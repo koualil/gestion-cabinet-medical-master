@@ -1,0 +1,119 @@
+.task__modal {
+   &.active {
+      opacity: 1;
+      z-index: 100;
+      .modal__wrapper {
+         right: 0;
+      }
+   }
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: -100;
+   position: fixed;
+   top: 0;
+   right: 0;
+   opacity: 0;
+   transition: all 0.5s;
+
+   .modal__wrapper {
+      position: absolute;
+      height: 100vh;
+      background-color: white;
+      max-width: 750px;
+      width: 100vw;
+      border-left: 1px solid rgba(214, 214, 214, 0.582);
+      top: 0;
+      right: -100%;
+      transition: all 0.5s;
+
+      p {
+         color: rgb(70, 70, 70);
+      }
+
+      .modal__content {
+         height: 100%;
+         overflow-y: scroll;
+         padding: 30px;
+
+         &::-webkit-scrollbar {
+            width: 0.4em;
+         }
+
+         &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+         }
+
+         &::-webkit-scrollbar-thumb {
+            background-color: rgba(133, 133, 133, 0.527);
+         }
+      }
+
+      .link {
+         $link-color: rgb(44, 187, 139);
+
+         font-size: 16px;
+         font-weight: 500;
+         display: inline-block;
+         margin: 0 10px;
+         padding: 7px 0;
+         cursor: pointer;
+         transition: all 0.25s;
+         color: rgb(113, 119, 126);
+
+         border-bottom: 2px solid transparent;
+
+         i {
+            margin-right: 2px;
+            transition: all 0.25s;
+         }
+
+         &.active,
+         &:hover {
+            border-bottom: 2px solid $link-color;
+            color: rgb(51, 51, 51);
+
+            i {
+               color: $link-color;
+            }
+         }
+      }
+
+      .close {
+         position: absolute;
+         z-index: 200;
+         right: 0px;
+         /*left: 20px; */
+         top: 0px;
+         height: 40px;
+         width: 40px;
+         text-align: center;
+         line-height: 50px;
+         border-radius: 50%;
+         font-size: 20px;
+         cursor: pointer;
+
+         transition: all 0.3s ease-in-out;
+
+         &:before,
+         &:after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 30%;
+            width: 50%;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+         }
+
+         &:before {
+            transform: translateY(-8px);
+            transform: rotate(45deg);
+         }
+         &:after {
+            transform: translateY(8px);
+            transform: rotate(-45deg);
+         }
+      }
+   }
+}
